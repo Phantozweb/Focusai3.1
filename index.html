@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Focus AI - A premium chat experience"
+    />
+    <title>Focus AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+      html { font-family: 'Inter', sans-serif; }
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+      .blinking-cursor {
+        animation: blink 1s step-end infinite;
+        font-weight: bold;
+      }
+       @keyframes blink-landing {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .blinking-cursor-landing {
+        animation: blink-landing 1.2s step-end infinite;
+      }
+      /* KaTeX font path fix */
+      .katex {
+        font-family: 'KaTeX_Main', 'Inter', sans-serif;
+      }
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      .shimmer-bg {
+        background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+        background-size: 200% 100%;
+        animation: shimmer 4s linear infinite;
+      }
+      @keyframes slide-in-from-right {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+      }
+      .animate-slide-in-from-right {
+          animation: slide-in-from-right 0.4s ease-out forwards;
+      }
+    </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-sCutv9tCeVokdC4rHcV3zUQ2BC8Ve0C2S0SvQ3ekx/e2JkC2hLqP3gbdMfYc2R0g" crossorigin="anonymous">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.9.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.525.0",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.1",
+    "rehype-katex": "https://esm.sh/rehype-katex@^7.0.1",
+    "remark-math": "https://esm.sh/remark-math@^6.0.0",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+    "html-to-image": "https://esm.sh/html-to-image@^1.11.13",
+    "framer-motion": "https://esm.sh/framer-motion@^11.3.11"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
