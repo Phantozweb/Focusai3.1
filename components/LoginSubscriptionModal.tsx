@@ -61,7 +61,7 @@ const LoginSubscriptionModal: React.FC<LoginSubscriptionModalProps> = ({ isOpen,
         if (username === 'Janarthan' && password === 'Jana@0098') {
             const proUser: User = { username: 'Janarthan', tier: 'pro' };
             onLoginSuccess(proUser);
-        } else if (username === 'trialuser' && password === 'trial123') {
+        } else if (username === 'Braseetha@VkMDU' && password === 'Br@seeth@VKMDU') {
             const trialUser: User = { username: 'trialuser', tier: 'trial', trialStartDate: Date.now() };
             onLoginSuccess(trialUser);
         } else if (username === 'Shivashangari' && password === 'ShivaSangari$AI24') {
